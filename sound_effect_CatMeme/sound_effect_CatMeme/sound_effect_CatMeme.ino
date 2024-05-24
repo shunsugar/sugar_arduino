@@ -1,16 +1,3 @@
-#define C3  130
-#define CD3 139
-#define D3  147
-#define DE3 156
-#define E3  165
-#define F3  175
-#define FG3 185
-#define G3  196
-#define GA3 208
-#define A3  220
-#define AB3 233
-#define B3  247
-
 #define C4  262       // ド
 #define CD4 277       // ド#レb
 #define D4  294       // レ
@@ -50,25 +37,9 @@
 #define AB6 1865
 #define B6  1976
 
-#define C7  2093
-#define CD7 2217
-#define D7  2349
-#define DE7 2489
-#define E7  2637
-#define F7  2794
-#define FG7 2960
-#define G7  3136
-#define GA7 3322
-#define A7  3520
-#define AB7 3729
-#define B7  3951
-
 int duration = 100;   // duration
 int pin1 = 7;         // pin number
 // int pin2 = 8;         // pin number
-
-// ファ　ファ　ファ　ファ　ミb　ソ　ファ
-// ド　　シ　　シb　　ラ　　ソ　シb　ラ
 
 void setup() {
   // put your setup code here, to run once:
@@ -77,38 +48,65 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  tone(pin1, F6);     
-  delay(duration / 2);
+  tone(pin1, FG4);     
+  delay(duration * 2);
   noTone(pin1);
   delay(duration);
 
-  tone(pin1, F6);
-  delay(duration / 2);
+  tone(pin1, FG4);     
+  delay(duration * 2);
   noTone(pin1);
   delay(duration);
 
-  tone(pin1, F6);
-  delay(duration / 2);
+  tone(pin1, FG4);     
+  delay(duration * 2);
   noTone(pin1);
   delay(duration);
 
-  tone(pin1, F6);
-  delay(duration / 2);
+  tone(pin1, E4);     
+  delay(duration * 2);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, D4);     
+  delay(duration * 4);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, D4);     
+  delay(duration * 6);
   noTone(pin1);
   delay(duration * 2);
 
-  tone(pin1, DE6);
-  delay(duration / 2);
-  noTone(pin1);
-  delay(duration * 2);
 
-  tone(pin1, G6);
-  delay(duration / 2);
-  noTone(pin1);
-  delay(duration * 2);
 
-  tone(pin1, F6);
-  delay(duration * 7);
+  tone(pin1, FG5);     
+  delay(duration * 2);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, FG5);     
+  delay(duration * 2);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, FG5);     
+  delay(duration * 2);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, E5);     
+  delay(duration * 2);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, D5);     
+  delay(duration * 4);
+  noTone(pin1);
+  delay(duration);
+
+  tone(pin1, D5);     
+  delay(duration * 6);
   noTone(pin1);
   delay(duration * 20);
 }
