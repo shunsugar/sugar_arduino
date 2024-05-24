@@ -24,8 +24,51 @@
 #define AB4 466       // ラ#シb
 #define B4  494       // シ
 
-int duration = 100;   // 
-int pin = 7;          // pin number
+#define C5  523
+#define CD5 554
+#define D5  587
+#define DE5 622
+#define E5  659
+#define F5  698
+#define FG5 740
+#define G5  784
+#define GA5 830
+#define A5  880
+#define AB5 932
+#define B5  988
+
+#define C6  1047
+#define CD6 1109
+#define D6  1175
+#define DE6 1245
+#define E6  1319
+#define F6  1397
+#define FG6 1480
+#define G6  1568
+#define GA6 1661
+#define A6  1760
+#define AB6 1865
+#define B6  1976
+
+#define C7  2093
+#define CD7 2217
+#define D7  2349
+#define DE7 2489
+#define E7  2637
+#define F7  2794
+#define FG7 2960
+#define G7  3136
+#define GA7 3322
+#define A7  3520
+#define AB7 3729
+#define B7  3951
+
+int duration = 100;   // duration
+int pin1 = 7;         // pin number
+// int pin2 = 8;         // pin number
+
+// ファ　ファ　ファ　ファ　ミb　ソ　ファ
+// ド　　シ　　シb　　ラ　　ソ　シb　ラ
 
 void setup() {
   // put your setup code here, to run once:
@@ -34,49 +77,38 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  tone(pin, F4);
+  tone(pin1, F6);     
   delay(duration / 2);
-  noTone(pin);
+  noTone(pin1);
   delay(duration);
-  tone(pin, F4);
+
+  tone(pin1, F6);
   delay(duration / 2);
-  noTone(pin);
+  noTone(pin1);
   delay(duration);
-  tone(pin, F4);
+
+  tone(pin1, F6);
   delay(duration / 2);
-  noTone(pin);
+  noTone(pin1);
   delay(duration);
-  tone(pin, F4);
+
+  tone(pin1, F6);
   delay(duration / 2);
-  noTone(pin);
+  noTone(pin1);
   delay(duration * 2);
-  tone(pin, DE4);
+
+  tone(pin1, DE6);
   delay(duration / 2);
-  noTone(pin);
+  noTone(pin1);
   delay(duration * 2);
-  tone(pin, G4);
+
+  tone(pin1, G6);
   delay(duration / 2);
-  noTone(pin);
+  noTone(pin1);
   delay(duration * 2);
-  tone(pin, F4);
+
+  tone(pin1, F6);
   delay(duration * 7);
-  noTone(pin);
+  noTone(pin1);
   delay(duration * 20);
-/*
-  tone(pin, C4);    // ド
-  delay(duration);
-  tone(pin, B4);    // シ
-  delay(duration);
-  tone(pin, AB4);   // シb
-  delay(duration);
-  tone(pin, A4);    // ラ
-  delay(duration);
-  tone(pin, G4);    // ソ
-  delay(duration);
-  tone(pin, AB4);   // シb
-  delay(duration);
-  tone(pin, A4);    // ラ
-  delay(duration);
-  delay(1000);
-*/
 }
